@@ -14,7 +14,7 @@ network = pylast.LastFMNetwork(api_key=args.API_KEY, api_secret=args.API_SECRET,
 
 tracks = network.get_user(args.USERNAME).get_recent_tracks(limit=5)
 
-image_size = 150
+image_size = "16%"
 output = "### Recent Tracks\n"
 
 for playedTrack in tracks:
