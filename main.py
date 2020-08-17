@@ -30,7 +30,7 @@ for playedTrack in tracks:
       pass
 
     if image_url is None:
-        image_url = "https://github.com/atfinke/atfinke/blob/master/placeholder.jpeg?raw=true"
+        image_url = "https://github.com/atfinke/atfinke/blob/master/Placeholder.jpeg?raw=true"
 
 
     output += "[<img src='{}' width='{}' height='{}' alt='{}'>]({})&nbsp;&nbsp;&nbsp;&nbsp;".format(image_url, image_size, image_size, track_name.replace("'", ""), track_url)
