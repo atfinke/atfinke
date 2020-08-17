@@ -32,7 +32,8 @@ for playedTrack in tracks:
     if image_url is None:
         image_url = "https://github.com/atfinke/atfinke/blob/master/placeholder.jpeg?raw=true"
 
-    output += "<img href='{}' src='{}' width='{}' height='{}' alt='{}'>&nbsp;&nbsp;&nbsp;&nbsp;".format(track_url,image_url, image_size, image_size, track_name.replace("'", ""))
+
+    output += "[<img src='{}' width='{}' height='{}' alt='{}'>]({})&nbsp;&nbsp;&nbsp;&nbsp;".format(image_url, image_size, image_size, track_name.replace("'", ""), track_url)
 
 with open("README.md", "w") as file:
     file.write(output)
