@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: test name
+    steps:
+    - name: test step
+      run: ls -A
