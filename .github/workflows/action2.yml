@@ -1,8 +1,6 @@
 name: Update #2
 
 on:
-  push:
-    branches: [ master ]
   schedule:
     - cron: "5 * * * *"
 
