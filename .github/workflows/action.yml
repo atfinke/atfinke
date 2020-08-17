@@ -1,4 +1,4 @@
-name: Update Now Playing
+name: Update #1
 
 on:
   push:
