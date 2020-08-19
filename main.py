@@ -35,7 +35,7 @@ for index, playedTrack in enumerate(tracks):
 
 
     output += "[<img src='{}' width='{}' height='{}' alt='{}'>]({})&nbsp;&nbsp;&nbsp;&nbsp;".format(image_url, image_size, image_size, track_name.replace("'", ""), track_url)
-    if index % 4 == 0 and index != 0:
+    if index % 5 == 4:
         output += "<br>"
 
 with open("README.md", "w") as file:
