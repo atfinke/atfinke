@@ -13,7 +13,7 @@ password_hash = pylast.md5(args.PASSWORD)
 network = pylast.LastFMNetwork(api_key=args.API_KEY, api_secret=args.API_SECRET,
                                username=args.USERNAME, password_hash=password_hash)
 
-tracks = network.get_user(args.USERNAME).get_recent_tracks(limit=args.TRACKS)
+tracks = network.get_user(args.USERNAME).get_recent_tracks(limit=int(args.TRACKS))
 
 image_size = "16%"
 output = "### Recent Tracks\n"
