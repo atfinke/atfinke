@@ -13,10 +13,12 @@ password_hash = pylast.md5(args.PASSWORD)
 network = pylast.LastFMNetwork(api_key=args.API_KEY, api_secret=args.API_SECRET,
                                username=args.USERNAME, password_hash=password_hash)
 
-tracks = network.get_user(args.USERNAME).get_recent_tracks(limit=int(args.TRACKS))
+tracks = network.get_user(args.USERNAME).get_recent_tracks(limit=int(args.TRACKS) * 2)
 
 image_size = "16%"
 output = "### Recent Tracks\n"
+
+valid_track_images = 0
 
 for index, playedTrack in enumerate(tracks):
     track = playedTrack.track
@@ -31,12 +33,13 @@ for index, playedTrack in enumerate(tracks):
       pass
 
     if image_url is None:
-        image_url = "https://github.com/atfinke/atfinke/blob/master/placeholder.jpeg?raw=true"
-
+        continue
 
     output += "[<img src='{}' width='{}' height='{}' alt='{}'>]({})&nbsp;&nbsp;&nbsp;&nbsp;".format(image_url, image_size, image_size, track_name.replace("'", ""), track_url)
-    if index % 5 == 4:
+    if valid_track_images % 5 == 4:
         output += "<br>"
+    
+    valid_track_images += 1
 
 with open("README.md", "w") as file:
     file.write(output)
