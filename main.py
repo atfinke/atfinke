@@ -40,6 +40,8 @@ for index, playedTrack in enumerate(tracks):
         output += "<br>"
     
     valid_track_images += 1
+    if valid_track_images == int(args.TRACKS):
+      break
 
 with open("README.md", "w") as file:
     file.write(output)
