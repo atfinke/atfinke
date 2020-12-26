@@ -1,2 +1,1 @@
 ### Recent Tracks
-[<img src='https://lastfm.freetls.fastly.net/i/u/300x300/87c13f95d6a04cf999ac3e78f89d370b.png' width='16%' height='16%' alt='New'>](https://www.last.fm/music/paul%2bmccartney/_/new)&nbsp;&nbsp;&nbsp;&nbsp;
