@@ -1,1 +1,2 @@
 ### Recent Tracks
+[<img src='https://lastfm.freetls.fastly.net/i/u/300x300/1b57eaca10c20599af4ce04412c04948.png' width='16%' height='16%' alt='Heavy With Hoping'>](https://www.last.fm/music/madeon/_/heavy%2bwith%2bhoping)&nbsp;&nbsp;&nbsp;&nbsp;[<img src='https://lastfm.freetls.fastly.net/i/u/300x300/82d1ca2070bc475b9f8229be266cd847.png' width='16%' height='16%' alt='Shuriken'>](https://www.last.fm/music/madeon/_/shuriken)&nbsp;&nbsp;&nbsp;&nbsp;
